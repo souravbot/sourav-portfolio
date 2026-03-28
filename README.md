@@ -1,4 +1,4 @@
-<h1 align="center">Hi 👋, I'm Sourav (Soura)</h1>
+<h1 align="center">Hi 👋, I'm Sourav (Sourav singh )</h1>
 <h3 align="center">🚀 AI Developer | Full-Stack Engineer | Hackathon Builder</h3>
 
 <p align="center">
