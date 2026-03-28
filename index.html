@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sourav | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    * {margin:0; padding:0; box-sizing:border-box; font-family:'Poppins', sans-serif;}
+    body {background:#0f172a; color:white; overflow-x:hidden;}
+    header {text-align:center; padding:80px 20px;}
+    h1 {font-size:3rem;}
+    h1 span {color:#38bdf8;}
+    p {opacity:0.8;}
+
+    .btn {
+      margin-top:20px;
+      display:inline-block;
+      padding:12px 25px;
+      border-radius:25px;
+      background:#38bdf8;
+      color:black;
+      text-decoration:none;
+      transition:0.3s;
+    }
+    .btn:hover {background:#0ea5e9;}
+
+    section {padding:60px 20px; max-width:1000px; margin:auto;}
+
+    .card {
+      background:#1e293b;
+      padding:20px;
+      margin:20px 0;
+      border-radius:15px;
+      transition:0.3s;
+    }
+    .card:hover {
+      transform:translateY(-5px);
+      box-shadow:0 10px 30px rgba(0,0,0,0.5);
+    }
+
+    .skills span {
+      display:inline-block;
+      background:#334155;
+      padding:8px 12px;
+      margin:5px;
+      border-radius:10px;
+    }
+
+    footer {text-align:center; padding:20px; opacity:0.6;}
+
+    /* animation */
+    .fade {opacity:0; transform:translateY(20px); transition:1s;}
+    .fade.show {opacity:1; transform:translateY(0);}
+  </style>
+</head>
+<body>
+
+<header class="fade">
+  <h1>Hi, I'm <span>Sourav</span></h1>
+  <p>AI Developer | Full Stack Engineer | Hackathon Builder</p>
+  <a class="btn" href="https://www.linkedin.com/in/sourav-singh-5566831ba/">Connect on LinkedIn</a>
+</header>
+
+<section class="fade">
+  <h2>🧠 About Me</h2>
+  <div class="card">
+    <p>B.Tech CSE student passionate about AI & full-stack development. Building MindTrack AI and MedAstha to solve real-world problems.</p>
+  </div>
+</section>
+
+<section class="fade">
+  <h2>⚡ Skills</h2>
+  <div class="card skills">
+    <span>Python</span><span>JavaScript</span><span>Java</span><span>C++</span>
+    <span>React</span><span>Node.js</span><span>MongoDB</span><span>AI/ML</span>
+  </div>
+</section>
+
+<section class="fade">
+  <h2>🚀 Projects</h2>
+  <div class="card">
+    <h3>🧠 MindTrack AI</h3>
+    <p>AI system for burnout detection & performance tracking.</p>
+  </div>
+  <div class="card">
+    <h3>🏥 MedAstha</h3>
+    <p>Healthcare platform for rural India.</p>
+  </div>
+</section>
+
+<section class="fade">
+  <h2>📫 Contact</h2>
+  <div class="card">
+    <p>Email: souravsingh1024@gmail.com</p>
+    <p>LinkedIn: sourav-singh</p>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Sourav | Built with ❤️</p>
+</footer>
+
+<script>
+  const faders = document.querySelectorAll('.fade');
+  window.addEventListener('scroll', () => {
+    faders.forEach(el => {
+      const rect = el.getBoundingClientRect();
+      if(rect.top < window.innerHeight - 100) {
+        el.classList.add('show');
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
